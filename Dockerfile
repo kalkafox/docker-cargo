@@ -14,5 +14,4 @@ COPY . .
 
 RUN mv cargo.config /root/.cargo/config
 
-RUN cargo update
-
+RUN cargo update && rm -rf /app
